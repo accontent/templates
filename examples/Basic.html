@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Forms</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <style type="text/css">pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{color:#abb2bf;background:#282c34}.hljs-keyword,.hljs-operator{color:#f92672}.hljs-pattern-match{color:#f92672}.hljs-pattern-match .hljs-constructor{color:#61aeee}.hljs-function{color:#61aeee}.hljs-function .hljs-params{color:#a6e22e}.hljs-function .hljs-params .hljs-typing{color:#fd971f}.hljs-module-access .hljs-module{color:#7e57c2}.hljs-constructor{color:#e2b93d}.hljs-constructor .hljs-string{color:#9ccc65}.hljs-comment,.hljs-quote{color:#b18eb1;font-style:italic}.hljs-doctag,.hljs-formula{color:#c678dd}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#e06c75}.hljs-literal{color:#56b6c2}.hljs-addition,.hljs-attribute,.hljs-meta .hljs-string,.hljs-regexp,.hljs-string{color:#98c379}.hljs-built_in,.hljs-class .hljs-title,.hljs-title.class_{color:#e6c07b}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#d19a66}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#61aeee}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}:root{--me-box-shadow:rgba(0, 0, 0, 0.15) 0px 8px 16px 0px}body,html{color:#2c3e50;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4,h5{font-weight:600;line-height:1.25;margin-top:-3.1rem;padding-top:4.6rem;margin-bottom:0}h1{display:none;font-size:2.2rem;margin-bottom:1rem}h2{font-size:1.65rem;padding-bottom:.3rem}h3{font-size:1.35rem}p{font-size:1.1rem;line-height:1.8;margin-top:1rem}a,a:hover,a:link,a:visited{font-weight:500;color:#3eaf7c;text-decoration:none;overflow-wrap:break-word}dl,ol,ul{margin-top:1rem}li{line-height:1.7;margin-bottom:.5rem}img{display:block;max-width:100%;border:1px solid #ccc;border-radius:20px;box-shadow:var(--me-box-shadow)}pre{box-shadow:var(--me-box-shadow);border-radius:6px}pre code.hljs{line-height:1.6;padding:2.4rem;border-radius:6px;overflow:auto}code{font-family:Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;color:#4e6e8e;padding:.25rem .5rem;margin:0;font-size:.85em;background-color:#f3f4f5;border-radius:3px;overflow-wrap:break-word;transition:background-color .3s ease}table{border-collapse:collapse;margin:1rem 0;display:block;overflow-x:auto}tr{border-top:1px solid #dfe2e5}td,th{padding:.6em 1em;border:1px solid #dfe2e5}th{text-align:center}.challenge,blockquote{padding:1rem 2rem;background-color:#e7ecf3;border-left-width:.8rem;border-left-style:solid;border-color:#486491;box-shadow:var(--me-box-shadow);margin:3rem 0}.challenge h4,blockquote h4{color:#486491;display:block;font-size:1.6rem;font-weight:700;line-height:1.7;margin:1rem 0;padding-top:0}blockquote p{margin-top:0}blockquote a,blockquote a:hover,blockquote a:link,blockquote a:visited{color:#486491}.challenge h4{font-size:1.4rem;font-weight:500;padding:1rem;margin:0;color:#198754}a.challenge,a:hover.challenge,a:link.challenge,a:visited.challenge{display:block;background-color:rgba(25,135,84,.1);color:#198754;border-color:#198754}.banner{display:grid;padding:3rem;margin-bottom:5rem;margin-top:3rem;background-color:#9932cc;color:#fff;font-size:3rem;font-style:normal;font-weight:600;text-align:center;text-transform:uppercase}.result{display:grid;align-content:center;padding:1rem;border-radius:.5rem;border:var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)}.video{margin-top:-3.1rem;padding-top:4.6rem}.video p{margin-top:0}.video-container{position:relative;padding-bottom:56.25%;padding-top:25px;height:0;margin-top:15px}.video-container iframe{position:absolute;top:0;left:0;width:100%;height:100%}.video-disclaimer{margin:0 0 -5px 0;padding:.5em .75em;background-color:#fff6c7;border-left:.5em solid #e7c000;color:#887935}.content .video .video-disclaimer a{display:flex;align-items:center;color:#887935;cursor:pointer;font-weight:400}.content .video .video-disclaimer a:hover{text-decoration:none}</style>
+  <script>
+      hljs.highlightAll();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 main">
+        <h1>HTML Forms</h1>
+<p>Forms provide the backbone to any website with communication between client and server. We use forms every day on the websites we interact with, comments are submitted through forms, Facebook posts, Twitter Tweets, and every time you upload a picture, you're posting data through a form. Forms provide a variety of functionality to collect various types of data.</p>
+<p>To make our forms functional we need a backend or server-side language like PHP or Python. These server-side languages along with the databases help us to receive, process and store the information.</p>
+<h2>The form tag</h2>
+<p>To start adding a form to our HTML page we start by adding the <code>&lt;form&gt;&lt;/form&gt;</code> tag. Any information we want to collect using this form will be added inside the opening <code>&lt;form&gt;</code> and closing <code>&lt;/form&gt;</code> form tags.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<p><strong>Form Attributes</strong>
+The two most important attributes we add to the form tag are <code>action</code> and <code>method</code></p>
+<ul>
+<li><code>action</code> attribute is used to add the URL or file path where the form will be sending its information.</li>
+<li><code>method</code> attribute defines how the information is sent. There are two values used for this attribute. <code>get</code> and <code>post</code>
+<ul>
+<li><code>get</code> is used when the information being sent is not sensitive and can benefit from being added to the URL when sending over to the action page. Example: Product search on Amazon or search form on Google</li>
+<li><code>post</code> is used when the information needs to be hidden from the user when sent to the action page. Example login credentials.</li>
+</ul>
+</li>
+</ul>
+<h2>Inputs and Labels</h2>
+<p>Inside the <code>&lt;form&gt;&lt;/form&gt;</code> tag we use different input types to allow the user to input the data. Each input is linked to a label to tell the user what information they need to add to the input field.</p>
+<ul>
+<li>Each input must have a label attached to it for accessibility.</li>
+<li>We add an <code>id</code> attribute to the input which matches with the <code>for</code> attribute of the label, to connect an input with the label</li>
+<li><strong>It is important to use a unique value for the id attribute of each input in one form.</strong></li>
+</ul>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Inputs and Labels" src="https://codepen.io/IMD/embed/PoXGKWW?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/PoXGKWW">
+  HTML Forms - Inputs and Labels</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2>Input Types</h2>
+<p>There are different types of inputs used in HTML forms. These inputs allow the browser to style the inputs accordingly and in some cases validate the data of the input.</p>
+<p>Using the specific input type also helps with improving the user experience on mobile devices by changing the keyboard based on the input type.</p>
+<p>We define the type of an input by using the <code>type</code> attribute in the <code>&lt;input&gt;</code> tag. If not type attribute is set then by default the input type is set to text. Which is a single line of text.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<ul>
+<li><code>text</code> - for generic single-line text.</li>
+<li><code>number</code> - for accepting numbers, the browser will validate that the data is a number</li>
+<li><code>email</code> - for an email address, this will be validated to contain the <code>@</code> symbol in the email</li>
+<li><code>url</code> - for accepting a URL, the browser will validate the URL to start with <code>http://</code> or <code>https://</code></li>
+<li><code>password</code> - for allowing the user to type in passwords, the input will hide the entered data with dots</li>
+<li><code>tel</code> - for telephone numbers</li>
+<li><code>time</code> - for accepting time in hours, minutes, seconds</li>
+<li><code>date</code> - for accepting dates, browsers will display a calendar picker</li>
+<li><code>range</code> - for selecting from a range of numbers, this will need the <code>min</code> and <code>max</code> attributes</li>
+<li><code>color</code> - for picking colors, shows a color picker tool</li>
+<li><code>file</code> - for allowing file uploads</li>
+</ul>
+<h2>Input Name</h2>
+<p>Just like the type it is important to add the <code>name</code> attribute to an input field. The <code>name</code> attribute is defined to give a name to the data that is being submitted. The value of the <code>name</code> attribute is then used by the receiving page to understand the content.</p>
+<p><strong>It is important to use a unique value for the name attribute of each input in one form.</strong></p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<h2>Other Attributes</h2>
+<p>We can use some additional attributes in our input fields for different purposes</p>
+<h3>Placeholder</h3>
+<p>The placeholder attribute is used to display placeholder text inside an input field.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;John Doe&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Placeholder" src="https://codepen.io/IMD/embed/abPmypx?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/abPmypx">
+  HTML Forms - Placeholder</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3>Value</h3>
+<p>The value attribute is used to pre-fill the value of an input field. This is useful when we are getting the previously saved information by the used from the database and then displaying it to the user for editing in a form.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;John Doe&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Mr. &quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Value" src="https://codepen.io/IMD/embed/gOZwxmL?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/gOZwxmL">
+  HTML Forms - Value</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3>Required</h3>
+<p>Required field is used for making an input field required.</p>
+<p>Required is a boolean attribute, which means we do not need to give it a value. It is either set or unset.</p>
+<p>If the <code>required</code> attribute is added to an input field the browser will not allow the form to submit if that field is empty.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;fullname&quot;</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;fullname&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;John Doe&quot;</span> <span class="hljs-attr">required</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Required" src="https://codepen.io/IMD/embed/WNLGEpX?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/WNLGEpX">
+  HTML Forms - Required</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h3>Min, Max and Step</h3>
+<p><code>min</code> and <code>max</code> attributes are used to specify the minimum number required and maximum number allowed in the numeric fields.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;quantity&quot;</span>&gt;</span>Quantity<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;quantity&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;quantity&quot;</span> <span class="hljs-attr">min</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">max</span>=<span class="hljs-string">&quot;10&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Min and Max" src="https://codepen.io/IMD/embed/poqEreV?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/poqEreV">
+  HTML Forms - Min and Max</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<p><code>step</code> attribute is used to define the step in which the number should increment. Mainly used with the number and range fields.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;quantity&quot;</span>&gt;</span>Quantity<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;quantity&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;quantity&quot;</span> <span class="hljs-attr">min</span>=<span class="hljs-string">&quot;2&quot;</span> <span class="hljs-attr">max</span>=<span class="hljs-string">&quot;10&quot;</span> <span class="hljs-attr">step</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Step" src="https://codepen.io/IMD/embed/yLGaoME?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/yLGaoME">
+  HTML Forms - Step</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2>Textarea</h2>
+<p>A larger area for multi-line text input, these are very common with varied content updates. Posts, tweets, etc.</p>
+<ul>
+<li>Textarea is a paired tag</li>
+<li>We add a label to textarea the same way as an input</li>
+<li>We require the <code>name</code> attribute for the data processing on submission</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;message&quot;</span>&gt;</span>Your Message<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;message&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Textarea" src="https://codepen.io/IMD/embed/XWojaMo?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/XWojaMo">
+  HTML Forms - Textarea</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2>Select</h2>
+<p>A group of elements organized in a drop-down container. Built-in accessibility controls to expand and select options. A select menu is the best way to organize a large list of selections like countries, states or provinces.</p>
+<ul>
+<li>Select is a paired tag</li>
+<li>Each dropdown option is added in its own <code>&lt;option&gt;&lt;/option&gt;</code> tag</li>
+<li>Each option must have the <code>value</code> attribute which will be sent as the data when the option is selected</li>
+<li>We add a label to select for accessibility</li>
+<li>We require the <code>name</code> attribute for the data processing on submission</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;rock&quot;</span>&gt;</span>Choose your Rock<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;rock&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;rock&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;mars&quot;</span>&gt;</span>Mars<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;earth&quot;</span>&gt;</span>Earth<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;venus&quot;</span>&gt;</span>Venus<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Select" src="https://codepen.io/IMD/embed/mdarMmE?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/mdarMmE">
+  HTML Forms - Select</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<blockquote>
+<h4>Selected Attribute</h4>
+<p>We can add the <code>selected</code> attribute to any option that we want to be pre-selected when the form loads.</p>
+</blockquote>
+<h2>Checkboxes</h2>
+<p>A small multi-selection grouping. More than one selection can apply.</p>
+<ul>
+<li>Checkbox is a <code>type</code> of input element</li>
+<li>Each <code>checkbox</code> input field must have its own <code>label</code></li>
+<li>Each <code>checkbox</code> must have its own <code>name</code> attribute vale</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>What music you like?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;pop&quot;</span>&gt;</span>Pop<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;pop&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;pop&quot;</span>&gt;</span>
+  
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;classic&quot;</span>&gt;</span>Classic<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;classic&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;classic&quot;</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;prog&quot;</span>&gt;</span>Progressive<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;prog&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;prog&quot;</span> <span class="hljs-attr">checked</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Checkboxes" src="https://codepen.io/IMD/embed/MWZjvEP?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/MWZjvEP">
+  HTML Forms - Checkboxes</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<blockquote>
+<h4>Checked Attribute</h4>
+<p>We can add the <code>checked</code> attribute to any checkbox type input that we want to be pre-checked when the form loads.</p>
+</blockquote>
+<h2>Radio Buttons</h2>
+<p>A single choice in a grouping of elements. Commonly used for toggles, only one radio option can be selected for each grouping.</p>
+<ul>
+<li>Radiobutton is a <code>type</code> of input element</li>
+<li>Each <code>radio</code> input field must have its own <code>label</code></li>
+<li>All <code>radio</code> input fields <strong>must have the same</strong> <code>name</code> attribute value</li>
+<li>Each <code>radio</code> input must have a unique <code>value</code> attribute, which will be sent as a form is submitted</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>How many hours you listen to music?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;thanks.html&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;little&quot;</span>&gt;</span>0-1<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;little&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;musictime&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;0-1&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;some&quot;</span>&gt;</span>2-3<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;some&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;musictime&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;2-3&quot;</span> <span class="hljs-attr">checked</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;alot&quot;</span>&gt;</span>4-5<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;alot&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;musictime&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;4-5&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Radio buttons" src="https://codepen.io/IMD/embed/qBLaXVB?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/qBLaXVB">
+  HTML Forms - Radio buttons</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<blockquote>
+<h3>Checked Attribute</h3>
+<p>We can add the <code>checked</code> attribute to any radio type input that we want to be pre-checked when the form loads.</p>
+</blockquote>
+<h2>Button</h2>
+<p>Buttons are used to allow the users to submit the form. The <code>type</code> attribute is added to the button to define its action.</p>
+<pre><code class="hljs">&lt;form action=&quot;thanks.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;fullname&quot;&gt;Full Name&lt;/label&gt;
+  &lt;input type=&quot;text&quot; id=&quot;fullname&quot; name=&quot;fullname&quot; required&gt;
+  &lt;button type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<iframe height="300" style="width:100%" scrolling="no" title="HTML Forms - Button" src="https://codepen.io/IMD/embed/NWeRvwX?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/NWeRvwX">
+  HTML Forms - Button</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2>Full Example</h2>
+<iframe height="265" style="width:100%" scrolling="no" title="YWKXLW" src="//codepen.io/IMD/embed/YWKXLW/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/IMD/pen/YWKXLW/">YWKXLW</a> by IMD
+  (<a href="https://codepen.io/IMD">@IMD</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+<h2>Form submission</h2>
+<p>For having the form functional and submitting the information we need a server to receive and process the information.</p>
+<p>We are creating a static website with HTML and CSS and do not have backend or server-side technology such as PHP to make our form functional we can use a third-party service, mainly for sending emails.</p>
+<p>The process these services use is as follows:</p>
+<ul>
+<li>You create a form, that points to their service. Using the <code>action</code> attribute</li>
+<li>The user submits the form.</li>
+<li>The data is sent to the service’s website.</li>
+<li>The service composes an email and sends it to you.</li>
+<li>The service redirects the user back to your website to display a message.</li>
+<li>The services work well for simple information collection but aren’t great for complex registration forms, etc.</li>
+</ul>
+<h3>Form services</h3>
+<ul>
+<li><a href="https://formspree.io/" target="_blank">Formspree</a></li>
+<li><a href="https://www.wufoo.com/" target="_blank">Woofoo</a></li>
+<li><a href="https://www.jotform.com/" target="_blank">JotForms</a></li>
+</ul>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

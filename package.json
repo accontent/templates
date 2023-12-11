@@ -1,0 +1,25 @@
+{
+  "name": "accontent-templates",
+  "version": "0.1.0",
+  "description": "HTML templates for converting markdown files to standalone HTML files to be used on Brightspace",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js",
+    "sass:watch": "sass --watch scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accontent/templates.git"
+  },
+  "author": "Michael Eisenbraun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/accontent/templates/issues"
+  },
+  "homepage": "https://github.com/accontent/templates#readme",
+  "dependencies": {
+    "markdown-to-standalone-html": "github:eisenbm/markdown-to-standalone-html",
+    "yaml-front-matter": "^4.1.1"
+  }
+}
