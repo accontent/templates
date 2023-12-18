@@ -1,11 +1,12 @@
----
-template: basic
----
 # HTML Forms
 
 Forms provide the backbone to any website with communication between client and server. We use forms every day on the websites we interact with, comments are submitted through forms, Facebook posts, Twitter Tweets, and every time you upload a picture, you're posting data through a form. Forms provide a variety of functionality to collect various types of data.
 
 To make our forms functional we need a backend or server-side language like PHP or Python. These server-side languages along with the databases help us to receive, process and store the information.
+
+```js
+const number = 3
+```
 
 ## The form tag
 To start adding a form to our HTML page we start by adding the `<form></form>` tag. Any information we want to collect using this form will be added inside the opening `<form>` and closing `</form>` form tags.
@@ -35,7 +36,7 @@ Inside the `<form></form>` tag we use different input types to allow the user to
   <input id="fullname">
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Inputs and Labels" src="https://codepen.io/IMD/embed/PoXGKWW?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Inputs and Labels" src="https://codepen.io/IMD/embed/PoXGKWW?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/PoXGKWW">
   HTML Forms - Inputs and Labels</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -89,7 +90,7 @@ The placeholder attribute is used to display placeholder text inside an input fi
   <input id="fullname" type="text" name="fullname" placeholder="John Doe">
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Placeholder" src="https://codepen.io/IMD/embed/abPmypx?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Placeholder" src="https://codepen.io/IMD/embed/abPmypx?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/abPmypx">
   HTML Forms - Placeholder</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -103,7 +104,7 @@ The value attribute is used to pre-fill the value of an input field. This is use
   <input id="fullname" type="text" name="fullname" placeholder="John Doe" value="Mr. ">
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Value" src="https://codepen.io/IMD/embed/gOZwxmL?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Value" src="https://codepen.io/IMD/embed/gOZwxmL?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/gOZwxmL">
   HTML Forms - Value</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -122,7 +123,7 @@ If the `required` attribute is added to an input field the browser will not allo
   <input id="fullname" type="text" name="fullname" placeholder="John Doe" required>
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Required" src="https://codepen.io/IMD/embed/WNLGEpX?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Required" src="https://codepen.io/IMD/embed/WNLGEpX?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/WNLGEpX">
   HTML Forms - Required</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -137,7 +138,7 @@ If the `required` attribute is added to an input field the browser will not allo
   <input id="quantity" type="number" name="quantity" min="2" max="10">
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Min and Max" src="https://codepen.io/IMD/embed/poqEreV?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Min and Max" src="https://codepen.io/IMD/embed/poqEreV?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/poqEreV">
   HTML Forms - Min and Max</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -150,7 +151,7 @@ If the `required` attribute is added to an input field the browser will not allo
   <input id="quantity" type="number" name="quantity" min="2" max="10" step="2">
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Step" src="https://codepen.io/IMD/embed/yLGaoME?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Step" src="https://codepen.io/IMD/embed/yLGaoME?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/yLGaoME">
   HTML Forms - Step</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -168,7 +169,7 @@ A larger area for multi-line text input, these are very common with varied conte
   <textarea id="message"></textarea>
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Textarea" src="https://codepen.io/IMD/embed/XWojaMo?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Textarea" src="https://codepen.io/IMD/embed/XWojaMo?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/XWojaMo">
   HTML Forms - Textarea</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -193,7 +194,7 @@ A group of elements organized in a drop-down container. Built-in accessibility c
   </select>
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Select" src="https://codepen.io/IMD/embed/mdarMmE?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Select" src="https://codepen.io/IMD/embed/mdarMmE?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/mdarMmE">
   HTML Forms - Select</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -220,7 +221,7 @@ A small multi-selection grouping. More than one selection can apply.
   <input type="checkbox" id="prog" name="prog" checked>
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Checkboxes" src="https://codepen.io/IMD/embed/MWZjvEP?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Checkboxes" src="https://codepen.io/IMD/embed/MWZjvEP?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/MWZjvEP">
   HTML Forms - Checkboxes</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -247,32 +248,32 @@ A single choice in a grouping of elements. Commonly used for toggles, only one r
   <input type="radio" id="alot" name="musictime" value="4-5">
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Radio buttons" src="https://codepen.io/IMD/embed/qBLaXVB?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Radio buttons" src="https://codepen.io/IMD/embed/qBLaXVB?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/qBLaXVB">
   HTML Forms - Radio buttons</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
-> ### Checked Attribute
+> #### Checked Attribute
 > We can add the `checked` attribute to any radio type input that we want to be pre-checked when the form loads.
 
 ## Button
 Buttons are used to allow the users to submit the form. The `type` attribute is added to the button to define its action. 
-```html{4}
+```html
 <form action="thanks.html" method="post">
   <label for="fullname">Full Name</label>
   <input type="text" id="fullname" name="fullname" required>
   <button type="submit">Send</button>
 </form>
 ```
-<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Button" src="https://codepen.io/IMD/embed/NWeRvwX?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100%;" scrolling="no" title="HTML Forms - Button" src="https://codepen.io/IMD/embed/NWeRvwX?theme-id=47863&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/IMD/pen/NWeRvwX">
   HTML Forms - Button</a> by IMD (<a href="https://codepen.io/IMD">@IMD</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
 ## Full Example
-<iframe height="265" style="width: 100%;" scrolling="no" title="YWKXLW" src="//codepen.io/IMD/embed/YWKXLW/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+<iframe height="265" style="width: 100%;" scrolling="no" title="YWKXLW" src="//codepen.io/IMD/embed/YWKXLW/?height=265&theme-id=47863&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/IMD/pen/YWKXLW/'>YWKXLW</a> by IMD
   (<a href='https://codepen.io/IMD'>@IMD</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

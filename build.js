@@ -54,7 +54,7 @@ function convertFile (inputPath, outputPath) {
     outputPath = outputPath.replace(filename, `"${title}"`)
     console.log(filename, outputPath)
 
-    exec(`./node_modules/markdown-to-standalone-html/dist/markdown-to-standalone-html.js -K -C -CC -B -hs atom-one-dark-reasonable -d 0 -o ${outputPath} ${inputPath}`, function(err, stdout, stderr) {
+    exec(`./node_modules/markdown-to-standalone-html/dist/markdown-to-standalone-html.js -K -C -CC -B -hs atom-one-light -d 0 -t templates/basic.html -o ${outputPath} ${inputPath}`, function(err, stdout, stderr) {
       if (err) {
         console.log(err)
         return

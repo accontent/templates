@@ -1,17 +1,19 @@
 pre {
-  box-shadow: var(--me-box-shadow);
+  // box-shadow: var(--me-box-shadow);
+  border: 1px solid var(--me-border-color);
   border-radius: 6px;
 }
 
 pre code.hljs {
-    line-height: 1.6;
-    padding: 2.4rem;
-    border-radius: 6px;
-    overflow: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  padding: 2.4rem;
+  border-radius: 6px;
+  overflow: auto;
 }
 
 code {
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   color: #4e6e8e;
   padding: 0.25rem 0.5rem;
   margin: 0;
@@ -20,4 +22,10 @@ code {
   border-radius: 3px;
   overflow-wrap: break-word;
   transition: background-color .3s ease;
+}
+
+iframe[src*="codepen.io"] {
+  margin: 1rem 0;
+  border-radius: 6px;
+  box-shadow: var(--me-box-shadow);
 }
