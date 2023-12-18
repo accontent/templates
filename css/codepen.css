@@ -15,6 +15,7 @@ body#the-body {
 
 .box.box.box, .editor .top-boxes, .CodeMirror-gutter-wrapper, body.project .editor-pane, body.project .editor {
   background-color: white;
+  border-right: 1px solid #c0c0c0;
 }
 
 #embed-nav li a {
