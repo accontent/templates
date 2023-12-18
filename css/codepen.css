@@ -8,6 +8,11 @@ body#the-body {
   border-bottom: 1px solid #c0c0c0;
 }
 
+.embed-footer::before {
+  box-shadow: none;
+  border-top: 1px solid #c0c0c0;
+}
+
 .box.box.box, .editor .top-boxes, .CodeMirror-gutter-wrapper, body.project .editor-pane, body.project .editor {
   background-color: white;
 }
