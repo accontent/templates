@@ -58,8 +58,6 @@ img {
   /* padding: 1rem; */
   max-width: 100%;
   border: 1px solid #ccc;
-  border-radius: 20px;
-  box-shadow: var(--me-box-shadow);
 }
 
 pre {
@@ -110,6 +108,7 @@ th, td {
 }
 
 th {
+  background-color: #f8f9fa;
   text-align: center;
 }
 
