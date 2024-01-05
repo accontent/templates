@@ -1,6 +1,6 @@
 {
   "name": "accontent-templates",
-  "version": "0.3",
+  "version": "0.3.0",
   "description": "HTML templates for converting markdown files to standalone HTML files to be used on Brightspace",
   "main": "build.js",
   "scripts": {
