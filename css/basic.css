@@ -222,4 +222,8 @@ a.challenge, a:hover.challenge, a:link.challenge, a:visited.challenge {
   text-decoration: none;
 }
 
+.photoframe {
+  padding: 1.5rem;
+}
+
 /*# sourceMappingURL=basic.css.map */
