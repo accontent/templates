@@ -4,7 +4,7 @@ pre, .container pre[class*="language-"].d2l-code, .container pre[class*="languag
   border-radius: 6px;
 }
 
-.container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers, .line-numbers-rows {
+.container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers, .container .line-numbers-rows {
   background-color: #f3f4f5;
   line-height: 1.7;
 }
@@ -15,7 +15,7 @@ pre, .container pre[class*="language-"].d2l-code, .container pre[class*="languag
   border-radius: 6px;
 }
 
-pre[class*="language-"].d2l-code::before {
+.container pre[class*="language-"].d2l-code::before {
   top: 5px;
   right: 5px;
 }
