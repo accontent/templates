@@ -1,7 +1,23 @@
-pre {
+pre, pre[class*="language-"].d2l-code {
   // box-shadow: var(--me-box-shadow);
   border: 1px solid var(--me-border-color);
   border-radius: 6px;
+}
+
+pre[class*="language-"].d2l-code, .line-numbers-rows {
+  background-color: #f3f4f5;
+  line-height: 1.7;
+}
+
+pre[class*="language-"].d2l-code {
+  font-size: 1.1rem;
+  padding: 2.4rem 3.8rem;
+  border-radius: 6px;
+}
+
+pre[class*="language-"].d2l-code::before {
+  top: 5px;
+  right: 5px;
 }
 
 pre code.hljs {

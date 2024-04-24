@@ -60,9 +60,25 @@ img {
   border: 1px solid #ccc;
 }
 
-pre {
+pre, pre[class*=language-].d2l-code {
   border: 1px solid var(--me-border-color);
   border-radius: 6px;
+}
+
+pre[class*=language-].d2l-code, .line-numbers-rows {
+  background-color: #f3f4f5;
+  line-height: 1.7;
+}
+
+pre[class*=language-].d2l-code {
+  font-size: 1.1rem;
+  padding: 2.4rem 3.8rem;
+  border-radius: 6px;
+}
+
+pre[class*=language-].d2l-code::before {
+  top: 5px;
+  right: 5px;
 }
 
 pre code.hljs {
@@ -225,6 +241,4 @@ a.challenge, a:hover.challenge, a:link.challenge, a:visited.challenge {
 
 .photoframe {
   padding: 1.5rem;
-}
-
-/*# sourceMappingURL=basic.css.map */
+}/*# sourceMappingURL=basic.css.map */
