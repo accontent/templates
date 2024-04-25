@@ -1,21 +1,21 @@
-pre, .container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers {
+pre, .container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers, .container-fluid pre[class*="language-"].d2l-code, .container-fluid pre[class*="language-"].d2l-code.line-numbers {
   // box-shadow: var(--me-box-shadow);
   border: 1px solid var(--me-border-color);
   border-radius: 6px;
 }
 
-.container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers, .container .d2l-code.line-numbers > code > .line-numbers-rows {
+.container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers, .container .d2l-code.line-numbers > code > .line-numbers-rows, .container-fluid pre[class*="language-"].d2l-code, .container-fluid pre[class*="language-"].d2l-code.line-numbers, .container-fluid .d2l-code.line-numbers > code > .line-numbers-rows {
   background-color: #fafafa;
   line-height: 1.7;
 }
 
-.container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers {
+.container pre[class*="language-"].d2l-code, .container pre[class*="language-"].d2l-code.line-numbers, .container-fluid pre[class*="language-"].d2l-code, .container-fluid pre[class*="language-"].d2l-code.line-numbers {
   font-size: 1.1rem;
   padding: 2.4rem 3.8rem;
   border-radius: 6px;
 }
 
-.container pre[class*="language-"].d2l-code::before {
+.container pre[class*="language-"].d2l-code::before, .container-fluid pre[class*="language-"].d2l-code::before {
   top: 5px;
   right: 5px;
 }
