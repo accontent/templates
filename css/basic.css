@@ -65,7 +65,7 @@ pre, .container pre[class*=language-].d2l-code, .container pre[class*=language-]
   border-radius: 6px;
 }
 
-.container pre[class*=language-].d2l-code, .container pre[class*=language-].d2l-code.line-numbers, .container .line-numbers-rows {
+.container pre[class*=language-].d2l-code, .container pre[class*=language-].d2l-code.line-numbers, .container .d2l-code.line-numbers > code > .line-numbers-rows {
   background-color: #f3f4f5;
   line-height: 1.7;
 }
@@ -134,7 +134,7 @@ blockquote, .challenge {
   border-left-width: 0.8rem;
   border-left-style: solid;
   border-color: #486491;
-  box-shadow: var(--me-box-shadow);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   margin: 3rem 0;
 }
 
