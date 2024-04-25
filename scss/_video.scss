@@ -1,10 +1,6 @@
 .video {
-  margin-top: calc(0.5rem - 3.6rem);
-  padding-top: calc(1rem + 3.6rem);
-}
-
-.video p {
-  margin-top: 0;
+  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .video-container {
@@ -23,23 +19,6 @@
   height: 100%;
 }
 
-.video-disclaimer {
-  margin: 0 0 -5px 0;
-  padding: 0.5em 0.75em;
-
-  background-color: #fff6c7;
-  border-left: 0.5em solid #e7c000;
-  color: #887935;
-}
-
-.content .video .video-disclaimer a {
-  display: flex;
-  align-items: center;
-  color: #887935;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-.content .video .video-disclaimer a:hover {
-  text-decoration: none;
+.video p {
+  padding: 0.5rem;
 }
