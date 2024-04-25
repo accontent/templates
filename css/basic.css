@@ -1,5 +1,5 @@
 :root {
-  --me-box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+  --me-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2)
   --me-border-color: #EBECF0;
 }
 
@@ -65,7 +65,7 @@ pre, .container pre[class*=language-].d2l-code, .container pre[class*=language-]
   border-radius: 6px;
 }
 
-.container pre[class*=language-].d2l-code, .container pre[class*=language-].d2l-code.line-numbers, .line-numbers-rows {
+.container pre[class*=language-].d2l-code, .container pre[class*=language-].d2l-code.line-numbers, .container .line-numbers-rows {
   background-color: #f3f4f5;
   line-height: 1.7;
 }
@@ -76,7 +76,7 @@ pre, .container pre[class*=language-].d2l-code, .container pre[class*=language-]
   border-radius: 6px;
 }
 
-pre[class*=language-].d2l-code::before {
+.container pre[class*=language-].d2l-code::before {
   top: 5px;
   right: 5px;
 }
