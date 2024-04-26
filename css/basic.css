@@ -197,6 +197,7 @@ a.challenge, a:hover.challenge, a:link.challenge, a:visited.challenge {
 .video {
   margin: 2rem 0;
   padding: 2rem;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
 
 .video-container {
