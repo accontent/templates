@@ -154,6 +154,8 @@ blockquote p {
 
 blockquote a, blockquote a:link, blockquote a:visited, blockquote a:hover {
   color: #486491;
+  border-bottom: 1px dashed #486491;
+  padding-bottom: 0.15rem;
 }
 
 .challenge h4 {
