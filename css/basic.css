@@ -33,6 +33,10 @@ h3 {
   font-size: 1.35rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 p {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -188,6 +192,42 @@ a.challenge, a:hover.challenge, a:link.challenge, a:visited.challenge {
   text-transform: uppercase;
 }
 
+hr:has(+ h4), hr:has(+ h4) ~ hr + hr {
+  color: #486491;
+  opacity: 1;
+  border-style: solid;
+  border-width: 2px;
+}
+
+hr:has(+ h4) {
+  margin: 1rem 0 0 0;
+}
+
+hr:has(+ h4) ~ hr + hr {
+  margin-top: 2rem;
+}
+
+hr:has(+ hr) {
+  display: none;
+  visibility: hidden;
+}
+
+hr + h4 {
+  margin: 0;
+  padding-top: 0;
+}
+
+hr + h4::before {
+  content: "A Sidebar";
+  display: block;
+  color: #486491;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  background-color: #e7ecf3;
+  padding: 0.5rem;
+}
+
 .result {
   display: grid;
   align-content: center;
@@ -224,4 +264,6 @@ a.challenge, a:hover.challenge, a:link.challenge, a:visited.challenge {
 
 .photoframe {
   padding: 1.5rem;
-}/*# sourceMappingURL=basic.css.map */
+}
+
+/*# sourceMappingURL=basic.css.map */
